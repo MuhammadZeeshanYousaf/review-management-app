@@ -51,8 +51,10 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # App specific Gems
   gem 'rspec-rails', '~> 6.0'
   gem 'factory_bot_rails', '~> 6.2'
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
 end
 
 group :development do
@@ -68,3 +70,6 @@ end
 
 # App specific Gems
 gem 'devise', '~> 4.9', '>= 4.9.2'
+
+gem 'dartsass-sprockets', '~> 3.0'
+gem 'jquery-rails', '~> 4.6'

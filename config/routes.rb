@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   devise_for :users, controllers: {
-    sessions: 'users/sessions'
+    registrations: 'users/registrations',
+    sessions: 'users/sessions',
+    passwords: 'users/passwords'
   }
 
 end
